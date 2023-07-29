@@ -1,0 +1,38 @@
+.services{
+    
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color: #337AB7;
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .cards{
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+    }
+    .txt{
+        color: red;
+        font-size: 28px;
+        font-weight: 700;
+        padding: 30px;
+    }
+    button{
+        background-color: red;
+        color: white;
+        border:none;
+        font-size: 25px;
+        font-weight: 600;
+        width: 250px;
+        height: 100px;
+        border-radius: 15px;
+        margin: 30px;
+    }
+}
