@@ -1,39 +1,19 @@
-import './App.css';
-import Service from './Pages/Services/service'
+import React from 'react'
+import {Row, Col} from 'react-bootstrap'
 import Navbar from './Components/Navbar/navbar'
-import Footer from './Components/Footer/footer'
-import {createBrowserRouter, Outlet, RouterProvider} from 'react-router-dom'
+import Hero from './Components/Hero/hero'
+import Analytics from './Components/Analytics/analytics';
+import Newsletter from './Components/NewsLetter/newsletter';
+import Card from './Components/Cards/cards'
 
-const Layout = ()=>{
-  return(
-    <div>
-    <Navbar/>
-    <Outlet/>
-    <Footer/>
-    </div>
-  )
-}
-
-const router = createBrowserRouter([
-  {
-  path:"/",
-  element: <Layout/>,
-  children:[
-    {
-      path:"/",
-      element:<Service/>
-    }
-  ]
-  }
-])
 function App() {
   return (
-    <div className="App">
-      <div className='app'>
-      <div className='container-fluid'>
-      <RouterProvider router={router}/>
-      </div>
-      </div>
+    <div>
+     <Navbar/>
+     <Hero/>
+     <Analytics/>
+     <Newsletter/>
+    <Card/>
     </div>
   );
 }
